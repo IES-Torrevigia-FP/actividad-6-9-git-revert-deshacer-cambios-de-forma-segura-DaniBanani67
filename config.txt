@@ -1,4 +1,3 @@
 modo=produccion
 nivel_log=infocache=activada
-modo=debug
-limite_conexiones=100
+modo=debugnivel_log=debug
