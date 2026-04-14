@@ -1,0 +1,25 @@
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-9-git-revert-deshacer-cambios-de-forma-segura-DaniBanani67$ git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 8 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Estás revirtiendo el commit 9a8f50a.
+  (corrige los conflictos y ejecuta "git revert --continue")
+  (usa "git revert --skip" para omitir este parche)
+  (usa "git revert --abort" para cancelar la operación de revertir)
+
+Rutas no fusionadas:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+  (usa "git add <archivo>..." para marcar una resolución)
+        modificados por ambos:  config.txt
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        cp2-revert-simple.txt
+        cp3-revert-head.txt
+        cp4-multiples-revert.txt
+
+
+El conflicto es porque dos commits modifican la misma parte del archivo
+Para resolverlo se edita el archivo manualmente, se eliminan los marcadores de conflicto y se deja una version correcta
+Despues se usa git add y git revert --continue para terminar el revert
