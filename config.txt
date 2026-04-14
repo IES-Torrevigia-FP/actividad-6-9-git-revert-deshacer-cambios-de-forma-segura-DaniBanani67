@@ -1,6 +1,9 @@
 modo=produccion
 nivel_log=infocache=activada
 modo=debug
+<<<<<<< HEAD
 limite_conexiones=100
 experimento_1=activo
 experimento_2=activo
+=======
+>>>>>>> parent of 9a8f50a (Ajusta limite de conexiones)

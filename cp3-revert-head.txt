@@ -1,0 +1,14 @@
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-9-git-revert-deshacer-cambios-de-forma-segura-DaniBanani67$ git log --oneline
+44de6fd (HEAD -> main) Revert "Sube nivel de log a debug"
+ddd45b0 Sube nivel de log a debug
+9a8f50a Ajusta limite de conexiones
+70156dc Cambia a modo debug en producción (bug)
+a3459c4 Activa cache por defecto
+9771892 Config inicial para producción
+deb2228 (origin/main, origin/HEAD) add deadline
+0790529 Initial commit
+
+git revert HEAD crea un commit nuevo que deshace el último commit.
+
+git reset --hard HEAD~1 en cambio borra el ultimo commit del historial, también puede eliminar cambios
+Por eso reset puede causar problemas si el proyecto ya se ha compartido con otras personas

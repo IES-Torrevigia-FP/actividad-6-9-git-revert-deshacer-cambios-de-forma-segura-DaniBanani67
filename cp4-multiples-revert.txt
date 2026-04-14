@@ -1,0 +1,26 @@
+27d6d01 (HEAD -> main) Activa experimento 2
+4c4cec7 Activa experimento 1
+44de6fd Revert "Sube nivel de log a debug"
+ddd45b0 Sube nivel de log a debug
+9a8f50a Ajusta limite de conexiones
+70156dc Cambia a modo debug en producción (bug)
+a3459c4 Activa cache por defecto
+9771892 Config inicial para producción
+deb2228 (origin/main, origin/HEAD) add deadline
+0790529 Initial commit
+
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-9-git-revert-deshacer-cambios-de-forma-segura-DaniBanani67$ git revert --no-commit 9a8f50a
+Auto-fusionando config.txt
+CONFLICTO (contenido): Conflicto de fusión en config.txt
+error: no se pudo revertir 9a8f50a... Ajusta limite de conexiones
+ayuda: después de resolver los conflictos, marca las rutas corregidas
+ayuda: con 'git add <rutas>' o 'git rm <rutas>'
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-9-git-revert-deshacer-cambios-de-forma-segura-DaniBanani67$ git commit -m "Revierte experimentos 1 y 2"~
+U       config.txt
+error: No es posible realizar un commit porque tienes archivos sin fusionar.
+ayuda: Corrígelos en el árbol de trabajo y entonces usa 'git add/rm <archivo>',
+ayuda: como sea apropiado, para marcar la resolución y realizar un commit.
+fatal: Saliendo porque existe un conflicto sin resolver.
+
+A veces interesa agrupar varios revert en un solo commit para que el historial quede mas limpio
+En lugar de tener varios commits de revert, se hace uno solo que deshace varios cambios
